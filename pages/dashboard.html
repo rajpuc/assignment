@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wppool</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+</head>
+
+<body>
+    <!-- ----- Nav Section start ----- -->
+    <div class="container home position-relative p-10 background-white">
+        <nav class="flex vertical-center justify-between background-gray pxy-15">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo-dark.png" alt="">
+            </a>
+            <div class="flex gap-10 vertical-center">
+                <a href="#"
+                    class="share border-white border-radius-50 flex vertical-center horizontal-center border-lemon">
+                    <i class="ri-share-fill dark-color"></i>
+                </a>
+                <a href="#"
+                    class="download btn cursor-pointer border-white border-radius-btn dark-color border-primary">Download
+                    the 2024 report</a>
+                <div id="open-menu" class="menu"><i class="ri-menu-fill cursor-pointer dark-color"></i></div>
+            </div>
+        </nav>
+        <div id="menu-bar" class="menu-bar position-absolute background-white border-radius-btn">
+            <div class="flex gap-10 vertical-center">
+                <a href="#" class="share border-white border-radius-50 flex vertical-center horizontal-center">
+                    <i class="ri-share-fill"></i>
+                </a>
+                <a href="#" class="download btn cursor-pointer border-white border-radius-btn">Download the 2024
+                    report</a>
+                <div id="close-menu" class="menu cursor-pointer"><i class="ri-close-fill"></i></div>
+            </div>
+            <div class="menu-links">
+                <a href="./dashboard.html">The WPPOOL Index</a>
+                <a href="./table.html">All Companies</a>
+                <a href="../index.html#potential">Potential Future Listings</a>
+                <a href="../index.html">State of USA</a>
+                <a href="../index.html#stories">Stories & Ideas</a>
+                <a href="../index.html#about">About WPPOOL</a>
+                <a href="../index.html#select">WPPOOL Portfolio Companies</a>
+                <a class="special" href="../index.html">Visit WPPOOL</a>
+            </div>
+        </div>
+        <!-- ----- Main Section start ----- -->
+        <main class="flex gap-10">
+            <div class="left border-radius-10px flex flex-column gap-5">
+                <div class="active">
+                    <p>The index </p>
+                    <span>-</span>
+                </div>
+                <div>
+                    <p>The index tab two</p>
+                    <span>+</span>
+                </div>
+                <div>
+                    <p>The index tab three</p>
+                    <span>+</span>
+                </div>
+                <div>
+                    <p>The index four</p>
+                    <span>+</span>
+                </div>
+                <div>
+                    <p>The index five</p>
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="right flex flex-column  gap-10">
+                <div class="top flex flex-column gap-10">
+                    <div class="heading flex vertical-center">
+                        <img src="../assets/images/Union.png" alt="">
+                        <h1>The WPPOOL Index</h1>
+                    </div>
+                    <div class="card-container gap-10">
+                        <div class="card border-radius-10px pxy-5 background-gray flex vertical-center justify-between">
+                            <h1 class="red-color">+66.2%</h1>
+                            <div class="flex flex-column border-right-red">
+                                <p>WPPOOL</p>
+                                <p>Index</p>
+                            </div>
+                        </div>
+                        <div class="card border-radius-10px pxy-5 background-gray flex vertical-center justify-between">
+                            <h1 class="primary-color">+26.6%</h1>
+                            <div class="flex flex-column border-right-primary">
+                                <p>Google</p>
+                                <p>Index</p>
+                            </div>
+                        </div>
+                        <div class="card border-radius-10px pxy-5 background-gray flex vertical-center justify-between">
+                            <h1 class="lemon-color">+34.1%</h1>
+                            <div class="flex flex-column border-right-lemon">
+                                <p>Microsoft</p>
+                                <p>Index</p>
+                            </div>
+                        </div>
+                        <div class="card border-radius-10px pxy-5 background-gray flex vertical-center justify-between">
+                            <h1 class="indigo-color">+17%</h1>
+                            <div class="flex flex-column border-right-indigo">
+                                <p>Twitter</p>
+                                <p>Index</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-container flex vertical-center justify-between">
+                        <div class="btn-right flex gap-20">
+                            <div class="btn-dropdown">
+                                <p>Sectors</p>
+                                <i class="ri-arrow-drop-down-fill"></i>
+                            </div>
+                            <div class="btn-dropdown">
+                                <p>Types of IPO</p>
+                                <i class="ri-arrow-drop-down-fill"></i>
+                            </div>
+                        </div>
+
+                        <div class="btn-left background-gray border-radius-10px flex vertical-center horizontal-center">
+                            <div>1Y</div>
+                            <div>YTD</div>
+                            <div class="active">6M</div>
+                            <div>1M</div>
+                            <div>1W</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <!-- <div id="chart"></div> -->
+                </div>
+            </div>
+        </main>
+        <!-- ---x-- Main Section End --x--- -->
+
+    </div>
+    <!-- ---x-- Nav Section End --x--- -->
+    
+
+
+
+    <!-- ----- Home Section start ----- -->
+    <!-- ---x-- Home Section End --x--- -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="../index.js"></script>
+    <script src="../js/chart.js"></script>
+</body>
+
+</html>

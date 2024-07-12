@@ -1,0 +1,160 @@
+.background {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wppool {
+    width: 100%;
+    color: var(--white-color);
+}
+
+.wppool h1 {
+    font-size: var(--font-heading);
+    font-weight: 400;
+}
+
+.wppool p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.down-btn {
+    position: fixed;
+    right: var(--main-padding);
+    bottom: 40px;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 25px;
+    box-shadow: 5px 10px 40px 0px var(--dark-color);
+}
+
+.info-container {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    bottom: 40px;
+    left: var(--main-padding);
+}
+
+.info .info-head {
+    font-size: var(--font-heading-medium);
+    font-weight: 300;
+}
+
+.info .info-text {
+    /* letter-spacing: 1px; */
+    font-weight: 300;
+    color: var(--gray-color);
+    font-size: 14px;
+    /* text-transform: capitalize; */
+}
+
+.menu i {
+    font-size: 25px !important;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .background {
+        width: 60vw;
+    }
+
+    .background img {
+        width: 100%;
+    }
+
+    .wppool {
+        width: 70%;
+    }
+
+    .wppool h1 {
+        font-size: 40px;
+    }
+
+    .wppool p {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .info-container {
+        gap: 15px;
+        left: 30px;
+    }
+
+    .info .info-head {
+        font-size: 20px;
+    }
+
+    .info .info-text {
+        font-size: 16px;
+    }
+
+    .down-btn {
+        right: 30px;
+        bottom: 40px;
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    
+
+    .background {
+        width: 90vw;
+    }
+
+    .background img {
+        width: 100%;
+    }
+
+    .wppool {
+        width: 90%;
+    }
+
+    .wppool h1 {
+        font-size: 30px;
+    }
+
+    .wppool p {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .info-container {
+        gap: 10px;
+        left: 10px;
+    }
+
+    .info .info-head {
+        font-size: 20px;
+    }
+
+    .info .info-text {
+        font-size: 14px;
+    }
+
+    .down-btn {
+        right: 10px;
+        bottom: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wppool</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/table.css">
+    
+</head>
+
+<body>
+    <div class="container home position-relative p-10 background-white">
+        <nav class="flex vertical-center justify-between background-gray pxy-15">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo-dark.png" alt="">
+            </a>
+            <div class="flex gap-10 vertical-center">
+                <a href="#"
+                    class="share border-white border-radius-50 flex vertical-center horizontal-center border-lemon">
+                    <i class="ri-share-fill dark-color"></i>
+                </a>
+                <a href="#"
+                    class="download btn cursor-pointer border-white border-radius-btn dark-color border-primary">Download
+                    the 2024 report</a>
+                <div id="open-menu" class="menu"><i class="ri-menu-fill cursor-pointer dark-color"></i></div>
+            </div>
+        </nav>
+        <div id="menu-bar" class="menu-bar position-absolute background-white border-radius-btn">
+            <div class="flex gap-10 vertical-center">
+                <a href="#" class="share border-white border-radius-50 flex vertical-center horizontal-center">
+                    <i class="ri-share-fill"></i>
+                </a>
+                <a href="#" class="download btn cursor-pointer border-white border-radius-btn">Download the 2024
+                    report</a>
+                <div id="close-menu" class="menu cursor-pointer"><i class="ri-close-fill"></i></div>
+            </div>
+            <div class="menu-links">
+                <a href="./dashboard.html">The WPPOOL Index</a>
+                <a href="./table.html">All Companies</a>
+                <a href="../index.html#potential">Potential Future Listings</a>
+                <a href="../index.html">State of USA</a>
+                <a href="../index.html#stories">Stories & Ideas</a>
+                <a href="../index.html#about">About WPPOOL</a>
+                <a href="../index.html#select">WPPOOL Portfolio Companies</a>
+                <a class="special" href="../index.html">Visit WPPOOL</a>
+            </div>
+        </div>
+        <div class="tab-container">
+            <div class="search flex justify-between">
+                <h1>All Companies</h1>
+                <div><input class="input" type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search Companies"></div>
+            </div>
+            <div class="table-wrapper">
+                <table id="companiesTable">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>Vertical</th>
+                            <th>Price</th>
+                            <th>Market Cap ($B)</th>
+                            <th>Revenue Growth</th>
+                            <th>Gross Margin</th>
+                            <th>EV/Revenue</th>
+                            <th>YTD Performance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Company">Adyen</td>
+                            <td data-label="Ticker">AFRM</td>
+                            <td data-label="Vertical">Payments</td>
+                            <td data-label="Price">$17.15</td>
+                            <td data-label="Market Cap ($B)">$50.5</td>
+                            <td data-label="Revenue Growth">49.0%</td>
+                            <td data-label="Gross Margin">15.8%</td>
+                            <td data-label="EV/Revenue">6.3</td>
+                            <td data-label="YTD Performance">24.3%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Affirm</td>
+                            <td data-label="Ticker">AFRM</td>
+                            <td data-label="Vertical">Lending</td>
+                            <td data-label="Price">$16.12</td>
+                            <td data-label="Market Cap ($B)">$4.7</td>
+                            <td data-label="Revenue Growth">32.0%</td>
+                            <td data-label="Gross Margin">48.7%</td>
+                            <td data-label="EV/Revenue">4.9</td>
+                            <td data-label="YTD Performance">77.1%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Alkami Technology</td>
+                            <td data-label="Ticker">ALKT</td>
+                            <td data-label="Vertical">B2B SaaS</td>
+                            <td data-label="Price">$16.27</td>
+                            <td data-label="Market Cap ($B)">$1.5</td>
+                            <td data-label="Revenue Growth">34.0%</td>
+                            <td data-label="Gross Margin">53.0%</td>
+                            <td data-label="EV/Revenue">7.0</td>
+                            <td data-label="YTD Performance">10.0%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">AvidXchange</td>
+                            <td data-label="Ticker">AVDX</td>
+                            <td data-label="Vertical">Payments</td>
+                            <td data-label="Price">$10.21</td>
+                            <td data-label="Market Cap ($B)">$2.0</td>
+                            <td data-label="Revenue Growth">27.0%</td>
+                            <td data-label="Gross Margin">61.5%</td>
+                            <td data-label="EV/Revenue">6.0</td>
+                            <td data-label="YTD Performance">10.5%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Bakkt Holdings</td>
+                            <td data-label="Ticker">BKKT</td>
+                            <td data-label="Vertical">Wealth</td>
+                            <td data-label="Price">$1.32</td>
+                            <td data-label="Market Cap ($B)">$0.1</td>
+                            <td data-label="Revenue Growth">38%</td>
+                            <td data-label="Gross Margin"></td>
+                            <td data-label="EV/Revenue">0.4</td>
+                            <td data-label="YTD Performance">13.8%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Virtu Financial Inc</td>
+                            <td data-label="Ticker">VIRT</td>
+                            <td data-label="Vertical">Wealth</td>
+                            <td data-label="Price">$17.0</td>
+                            <td data-label="Market Cap ($B)">$3.1</td>
+                            <td data-label="Revenue Growth">-22.0%</td>
+                            <td data-label="Gross Margin">38.2%</td>
+                            <td data-label="EV/Revenue">2.6</td>
+                            <td data-label="YTD Performance">-17.8%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Adyen</td>
+                            <td data-label="Ticker">AFRM</td>
+                            <td data-label="Vertical">Payments</td>
+                            <td data-label="Price">$17.15</td>
+                            <td data-label="Market Cap ($B)">$50.5</td>
+                            <td data-label="Revenue Growth">49.0%</td>
+                            <td data-label="Gross Margin">15.8%</td>
+                            <td data-label="EV/Revenue">6.3</td>
+                            <td data-label="YTD Performance">24.3%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Affirm</td>
+                            <td data-label="Ticker">AFRM</td>
+                            <td data-label="Vertical">Lending</td>
+                            <td data-label="Price">$16.12</td>
+                            <td data-label="Market Cap ($B)">$4.7</td>
+                            <td data-label="Revenue Growth">32.0%</td>
+                            <td data-label="Gross Margin">48.7%</td>
+                            <td data-label="EV/Revenue">4.9</td>
+                            <td data-label="YTD Performance">77.1%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">Alkami Technology</td>
+                            <td data-label="Ticker">ALKT</td>
+                            <td data-label="Vertical">B2B SaaS</td>
+                            <td data-label="Price">$16.27</td>
+                            <td data-label="Market Cap ($B)">$1.5</td>
+                            <td data-label="Revenue Growth">34.0%</td>
+                            <td data-label="Gross Margin">53.0%</td>
+                            <td data-label="EV/Revenue">7.0</td>
+                            <td data-label="YTD Performance">10.0%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Company">AvidXchange</td>
+                            <td data-label="Ticker">AVDX</td>
+                            <td data-label="Vertical">Payments</td>
+                            <td data-label="Price">$10.21</td>
+                            <td data-label="Market Cap ($B)">$2.0</td>
+                            <td data-label="Revenue Growth">27.0%</td>
+                            <td data-label="Gross Margin">61.5%</td>
+                            <td data-label="EV/Revenue">6.0</td>
+                            <td data-label="YTD Performance">10.5%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../index.js"></script>
+    <script>
+        function searchTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById('companiesTable');
+            const trs = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < trs.length; i++) {
+                let tds = trs[i].getElementsByTagName('td');
+                let showRow = false;
+
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j].innerHTML.toLowerCase().indexOf(filter) > -1) {
+                        showRow = true;
+                        break;
+                    }
+                }
+
+                trs[i].style.display = showRow ? '' : 'none';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
